@@ -10,19 +10,49 @@
   <script src="./script/angular.min.js"></script>
   <script src="./script/BaseApp.js"></script>"
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
 
 <div class="jumbotron text-center">
   <p>My first api</p> 
 </div>
 
-<div class="container">
-  <div class="row" ng-app="myApp" ng-controller="myCtrl">
-        <ul>
-                <li ng-repeat="each in employee">
-                  {{ each.name + ', ' +each.department }}
-                </li>
-              </ul>
+
+<div class="well well-sm">
+<div>
+    <div class="form-group">
+            <label for="employeeCode">Employee Code:</label>
+            <input type="text" ng-model="employeeCode" class="form-control"  id="employeeCode">
+         </div>
+         <div class="form-group">
+            <label for="name">Employee Name:</label>
+            <input type="text" ng-model="name" class="form-control" >
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" class="form-control" ng-model="age" >
+        </div>
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" class="form-control" ng-model="department" >
+        </div>
+        <div class="form-group">
+            <label for="designation">Designation:</label>
+            <input type="text" class="form-control" ng-model="designation" >
+        </div>
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" ng-model="email" >
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="addEmployee()">Add Emplopee</button>
+</div>
+<div>
+
+</div>
+    <div class="row" >
+      <div ng-repeat="each in employee">
+        {{ each.name + ', ' +each.department }}
+    </div>
+
 </div>
 </body>
 </html>

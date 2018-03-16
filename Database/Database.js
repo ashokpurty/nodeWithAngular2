@@ -1,2 +1,1 @@
-[{ "employeeCode": "001", "name":"ashok", "age":"32", "department":"Devloper", "designation":"senior software engineer" },
-{ "employeeCode": "002", "name":"Panjak", "age":"35", "department":"Devloper", "designation":"Lead software engineer" }]
+[{"employeeCode":"001","name":"ashok","age":"32","department":"Devloper","designation":"senior software engineer","email":"ashok@gmail.com"},{"employeeCode":"002","name":"Panjak","age":"35","department":"Devloper","designation":"Lead software engineer","email":"panjak@gmail.com"},{"name":"kapil","age":"34","department":"Testing","designation":"QA lead","email":"lead@gmail.com"}]
